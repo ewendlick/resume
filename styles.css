@@ -122,53 +122,51 @@
     background-color: #f7e0c1;
     padding: 320px 30px 50px;
   }
-  .mugshot {
-    display: false;
-    position: absolute;
-    margin: false;
-    top: 50px;
-    left: 70px;
-    right: false;
-    bottom: false;
-    height: 210px;
-    width: 210px;
-  }
-  .mugshot .logo {
-    margin: -23px;
-  }
-  .logo {
-    display: false;
-    position: absolute;
-    margin: false;
-    top: 0;
-    left: 0;
-    right: false;
-    bottom: false;
-    z-index: 100;
+
+  * {box-sizing: border-box}
+
+  .profile-container {
+    position: relative;
+    top: -290px;
     margin: 0;
-    color: #000;
-    height: 250px;
-    width: 250px;
+    height: 290px;
+    width: 290px;
+    overflow: hidden;
   }
-  .logo .logo-svg {
-    height: 100%;
+
+  .profile-image {
+    display: block;
     width: 100%;
-    stroke: #000;
-    cursor: pointer;
+    height: auto;
   }
-  .logo .logo-text {
-    display: false;
-    position: absolute;
-    margin: false;
-    top: 18%;
-    right: 16%;
-    cursor: pointer;
-    font-family: "Montserrat";
-    font-size: 55px;
-    letter-spacing: 0px;
-    font-weight: 400;
-    line-height: 58.333333333333336px;
+
+  .profile-overlay {
+      position: absolute;
+      bottom: -66%;
+      left: -33%;
+      width: 300%;
+      height: 300%;
+      transition: 1.5s ease;
+      opacity: 0;
+      background: url("./images/space.jpg");
+      overflow: hidden;
   }
+
+  .profile-container:hover .profile-overlay {
+      opacity: 0.5;
+
+      animation-name: spin;
+      animation-duration: 20000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+  }
+
+  .social-container {
+    /* HACK: result of the profile image */
+    position: relative;
+    top: -240px;
+  }
+  
   .social {
     padding-left: 60px;
     margin-bottom: 20px;
@@ -208,6 +206,11 @@
     margin: 60px auto 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid #888;
+  }
+  .skills-container {
+    /* HACK: result of the profile image */
+    position: relative;
+    top: -250px;
   }
   .list-item {
     padding-left: 15px;
@@ -259,6 +262,15 @@
       letter-spacing: 6px;
       font-weight: 100;
       line-height: 48px;
+    }
+  }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
     }
   }
   
