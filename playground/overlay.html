@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        * {box-sizing: border-box}
+
+        .container {
+            position: relative;
+            width: 300px;
+            max-width: 300px;
+            overflow: hidden;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: -66%;
+            left: -33%;
+            width: 300%;
+            height: 300%;
+            transition: 1.5s ease;
+            opacity: 0;
+            background: url("./space.jpg");
+            overflow: hidden;
+        }
+
+        .container:hover .overlay {
+            opacity: 0.5;
+
+            animation-name: spin;
+            animation-duration: 20000ms;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; 
+        }
+
+        @keyframes spin {
+            from {
+                transform:rotate(0deg);
+            }
+            to {
+                transform:rotate(360deg);
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="profile.jpg" class="image">
+        <div class="overlay"></div>
+    </div>
+</body>
+</html>
