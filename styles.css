@@ -111,15 +111,13 @@
     width: 94%;
   }
   .side-bar {
-    display: false;
     position: absolute;
-    margin: false;
     top: 60px;
     left: 5%;
-    right: false;
     bottom: 0;
     width: 350px;
     background-color: #f7e0c1;
+    background-color: hsl(34, 77%, 86%);
     padding: 320px 30px 50px;
   }
 
