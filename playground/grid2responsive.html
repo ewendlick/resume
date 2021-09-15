@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <style>
+    body {
+        margin: 40px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+		background-color: #f90;
+		color: #444;
+        height: 60px;
+	}
+
+	.company-icon {
+		background-color: #444;
+		color: #fff;
+		border-radius: 5px;
+		padding: 20px;
+        width: 40px;
+	}
+
+	.company-details {
+        min-width: 200px;
+	}
+    .company-name {
+        min-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+    .company-role {
+        min-width: 200;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+    }
+	.company-range {
+        flex-basis: 200px;
+        flex-shrink: 0;
+        text-align: right;
+	}
+
+
+
+    @media (max-width: 600px){
+
+    }
+
+    </style>
+
+</head>
+<body>
+        <div class="row">
+            <span class="company-details">
+                <span class="company-icon">A</span>
+                <span class="company-name">WOVN</span>
+                <span class="company-role">position</span>
+            </span>
+            <span class="company-range">2016-0123123</span>
+        </div>
+</body>
+</html>
