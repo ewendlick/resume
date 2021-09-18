@@ -1,5 +1,4 @@
-Flexbox company name and working period with position underneath
-Company icon left of company name
+Shift working timeframe to collapse underneath role for smaller screens
 
 Job description
 Job tasks
@@ -8,3 +7,4 @@ Job accomplishments
 overlay
 
 Japanese translation
+

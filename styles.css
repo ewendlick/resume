@@ -265,6 +265,101 @@
     font-weight: 600;
     line-height: 28px;
   }
+
+  .company-container {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  .company-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px; 
+    flex-basis: 70px;
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+  }
+
+  .company-icon.wovn {
+    background-image: url('./images/companyIcons/wovn.png')
+  }
+
+  .company-icon.kitsuki {
+    background-image: url('./images/companyIcons/kitsuki.jpg')
+  }
+
+  .company-icon.rakuten {
+    background-image: url('./images/companyIcons/rakuten.jpg')
+  }
+
+  .company-icon.t-mark {
+    background-image: url('./images/companyIcons/t-mark.png')
+  }
+
+  .company-icon.kens {
+    background-image: url('./images/companyIcons/kens.png')
+  }
+
+  .company-icon.berlitz {
+    background-image: url('./images/companyIcons/berlitz.jpg')
+  }
+
+  .company-icon.cypress-semiconductor {
+    background-image: url('./images/companyIcons/cypress-semiconductor.jpg')
+  }
+
+  .company-icon.kbvr {
+    background-image: url('./images/companyIcons/kbvr.jpg')
+  }
+
+  .company-details {
+    width: 100%;
+    flex-basis: 400px;
+    flex-shrink: 1;
+  }
+
+  .company-name {
+    width: 100%;
+    min-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+
+    margin: 0 0 0 8px;
+    font-family: 'Open Sans';
+    font-size: 21px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #000;
+  }
+
+  .company-role {
+    width: 100%;
+    min-width: 200px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+
+    margin: 0 0 0 8px;
+    color: #777;
+  }
+
+  .company-range {
+    flex-basis: 200px;
+    flex-shrink: 0;
+    min-width: 200px;
+    text-align: right;
+  }
+
+  @media screen and (max-width: 600px) {
+    .company_range {
+      text-align: left;
+    }
+  }
+
   @media screen and (max-width: 1150px) {
     .name {
       color: #fff;
