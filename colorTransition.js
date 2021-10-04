@@ -1,5 +1,6 @@
 'use strict'
-const COLOR_CHANGE_RATE = 1 // seconds
+
+const COLOR_CHANGE_RATE = 5 // seconds
 
 const observer = new MutationObserver((_, instance) => {
   const sideBarSelector = document.querySelector('.side-bar')

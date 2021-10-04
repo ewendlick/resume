@@ -116,10 +116,6 @@
     left: 5%;
     bottom: 0;
     width: 350px;
-    /*
-    background-color: #f7e0c1;
-    background-color: hsl(34, 77%, 86%);
-    */
     padding: 320px 30px 50px;
     transition: 0.2s linear;
   }
@@ -352,6 +348,10 @@
     flex-shrink: 0;
     min-width: 200px;
     text-align: right;
+  }
+
+  .responsibilities, .accomplishments {
+    margin: 0 auto 0px;
   }
 
   @media screen and (max-width: 600px) {
