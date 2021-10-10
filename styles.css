@@ -262,10 +262,15 @@
     line-height: 28px;
   }
 
+  a.plain {
+    color: #000;
+    text-decoration: none;
+  }
+
   .company-container {
     display: flex;
-    justify-content: space-between;
-    height: 60px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .company-icon {
@@ -311,13 +316,13 @@
 
   .company-details {
     width: 100%;
-    flex-basis: 400px;
+    flex-basis: 250px;
     flex-shrink: 1;
   }
 
   .company-name {
     width: 100%;
-    min-width: 200px;
+    min-width: 250px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: inline-block;
@@ -333,7 +338,7 @@
 
   .company-role {
     width: 100%;
-    min-width: 200px;
+    min-width: 250px;
     text-align: left;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -344,9 +349,9 @@
   }
 
   .company-range {
-    flex-basis: 200px;
+    flex-basis: 170px;
     flex-shrink: 0;
-    min-width: 200px;
+    min-width: 170px;
     text-align: right;
   }
 
